@@ -1,10 +1,125 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-decoration: none;
-  color: #000;
-  min-width: 1440px;
-  max-height: 900px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: rgba(255, 254, 251, 0.8);
+	color: #000;
+}
+
+.wrap {
+	display: flex;
+	min-width: 1440px;
+	max-height: 900px;
+}
+
+.main_form h1 {
+	padding: 32px 0 32px 32px;
+	font-size: 28px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.form form {
+	width: 332px;
+	background-color: #fffefb;
+	margin-left: 32px;
+	border-radius: 4px;
+	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+}
+
+.group-form {
+	width: 284px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 6px 24px;
+	padding-top: 9px;
+	background-color: #fffefb;
+}
+
+.form-label {
+	font-size: 10px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 12.6px;
+	letter-spacing: -0.02em;
+	background-color: #fffefb;
+	margin-bottom: 4px;
+}
+
+.form-label span {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #ff8484;
+}
+
+.product {
+	border: none;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	background-color: #fffefb;
+	outline: none;
+	padding: 10px 105px 11px 16px;
+}
+
+.product::placeholder{
+	color: #B4B4B4;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 15.08px;
+}
+
+.product::-webkit-input-placeholder,
+.product::-moz-placeholder,
+.product:-moz-placeholder,
+.product:-ms-input-placeholder {
+	color: #B4B4B4;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 15.08px;
+}
+
+.product_description {
+	padding: 10px 132px 83px 16px;
+}
+
+.product_description::placeholder {
+	color: #B4B4B4;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 15.08px;
+}
+
+.product_description::-webkit-input-placeholder,
+.product_description::-moz-placeholder,
+.product_description:-moz-placeholder,
+.product_description:-ms-input-placeholder {
+	padding: 10px 0 0 16px;
+	color: #B4B4B4;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 15.08px;
+}
+
+
+.btn-form {
+	width: 284px;
+	height: 36px;
+	border: none;
+	border-radius: 10px;
+	margin: 17px 24px 22px 24px;
+	background-color: #eee;
+	font-family: 'Inter', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 14.5px;
+	letter-spacing: -0.02em;
+	color: #B4B4B4;
 }
