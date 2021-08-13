@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel='preconnect' href='https://fonts.googleapis.com'>
+	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+	<link href='https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap' rel='stylesheet'>
+	<link rel='stylesheet' href='style.css'>
 	<title>Тестовое Привезенцев</title>
 </head>
 <body>
-	
+	<div class='wrap'>
+		<section class='main_form'>
+			<h1>Добавление товара</h1>
+			<div class='form'>
+				<form>
+					<div class='group-form'>
+						<label class='form-label' for='product-name'>Наименование товара <span></span></label>
+						<input class="product" type='text' id='product-name' placeholder='Введите наименование товара'>
+					</div>
+					<div class='group-form'>
+						<label class='form-label' for='product-description'>Описание товара</label>
+						<input class="product product_description" type='text' id='product-description' placeholder='Введите описание товара'>
+					</div>
+					<div class='group-form'>
+						<label class='form-label' for='product-link'>Ссылка на изображение товара <span></span></label>
+						<input class="product" type='text' id='product-link' placeholder='Введите ссылку'>
+					</div>
+					<div class='group-form'>
+						<label class='form-label' for='product-price'>Цена товара <span></span></label>
+						<input class="product" type='text' id='product-price' placeholder='Введите цену'>
+					</div>
+					<button class='btn-form'>Добавить товар</button>
+				</form>
+			</div>
+		</section>
+
+		<section class='goods'>
+			<div class="wrap_filter">
+				<button><p>По умолчанию</p></button>
+			</div>
+			<div class="wrap_cards">
+
+			</div>
+		</section>
+	</div>
+	<script src='script.js'></script>
 </body>
 </html>
