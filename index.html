@@ -12,39 +12,106 @@
 </head>
 <body>
 	<div class='wrap'>
-		<section class='main_form'>
+		<header class='header'>
 			<h1>Добавление товара</h1>
+			<div class="wrap_btn-filter"><button class='btn-filter'>По умолчанию <p class='arrow'></p></button></div>
+		</header>
+		<div class='wrap-content'>
+			<section class='main_form'>
 			<div class='form'>
 				<form>
 					<div class='group-form'>
 						<label class='form-label' for='product-name'>Наименование товара <span></span></label>
-						<input class="product" type='text' id='product-name' placeholder='Введите наименование товара'>
+						<input class="product" type='text' id='productName' placeholder='Введите наименование товара' oninput='checkForm()' required>
 					</div>
 					<div class='group-form'>
 						<label class='form-label' for='product-description'>Описание товара</label>
-						<input class="product product_description" type='text' id='product-description' placeholder='Введите описание товара'>
+						<input class="product product_description" type='text' id='productDescription' placeholder='Введите описание товара'>
 					</div>
 					<div class='group-form'>
 						<label class='form-label' for='product-link'>Ссылка на изображение товара <span></span></label>
-						<input class="product" type='text' id='product-link' placeholder='Введите ссылку'>
+						<input class="product" type='url' id='productLink' placeholder='Введите ссылку' oninput='checkForm()' required>
 					</div>
 					<div class='group-form'>
 						<label class='form-label' for='product-price'>Цена товара <span></span></label>
-						<input class="product" type='text' id='product-price' placeholder='Введите цену'>
+						<input class="product" type='text' id='productPrice' placeholder='Введите цену' oninput='checkForm()' required>
 					</div>
-					<button class='btn-form'>Добавить товар</button>
+					<button class='btn-form' id='btnForm'>Добавить товар</button>
 				</form>
 			</div>
 		</section>
-
+		<div class="wrap_btn-filter_mobile"><button class='btn-filter'>По умолчанию <p class='arrow'></p></button></div>
 		<section class='goods'>
-			<div class="wrap_filter">
-				<button><p>По умолчанию</p></button>
-			</div>
-			<div class="wrap_cards">
-
-			</div>
+			<main class='wrap_list-cards'>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class='wrap-card'>
+						<div class='wrap_btn-delete'><button class='btn-delete'><img src='./img/delete.svg' alt='icon delete'></button></div>
+						<div class='goods-card'>
+							<img class='goods-img' src='./img/product.png' alt="product">
+							<div>
+								<h2 class='title-card'>Наименование товара</h2>
+								<p class='text-card'>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+								<p class='price'>10 000 руб.</p>
+							</div>
+						</div>
+					</div>
+				</main>
 		</section>
+		</div>
 	</div>
 	<script src='script.js'></script>
 </body>
